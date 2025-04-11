@@ -9,8 +9,8 @@
   --font-heading: var(--font);
   --gap: 30px;
   --white: #ffffff;
-  --black: #000000;
-  --yellow: #ffd700;
+  --yellow: #000000;
+  --black: #ffd700;
   --glow-white: rgba(255, 255, 255, 0.5);
   --foreground: var(--black);
   --background: var(--yellow);
