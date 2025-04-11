@@ -1,12 +1,53 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-It.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-SemiboldIt.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../fonts/SourceSansPro-BoldIt.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
 :root {
   --xl: 1512px;
   --lg: 1280px;
   --md: 1024px;
   --sm: 767px;
   --xs: 584px;
-  --font: "UniFont", sans-serif;
-  --font-heading: "FKRasterGroteskTrial-Blended", sans-serif;
-  --font-heading: var(--font);
+  --font: "Source Sans Pro", sans-serif;
+  --font-heading: "Source Sans Pro", sans-serif;
   --gap: 30px;
   --white: #ffffff;
   --yellow: #000000;
@@ -15,33 +56,32 @@
   --foreground: var(--black);
   --background: var(--yellow);
   --h1: 5rem;
-  --p: 1rem;
-  --lp: 1.25em;
+  --p: 1.2rem;
+  --lp: 1.4em;
   --psm: 0.7rem;
   --ease-in-out: cubic-bezier(0.73, 0, 0, 1);
   --sidebar-width: 250px;
 }
 .custom-font {
-  font-family: "Unifont", sans-serif;
-  font-size: 3rem; /* Adjust this value as needed */
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 3rem;
 }
 
 .smaller-font {
-  font-size: 0.5em; /* This makes it half the size of its parent */
-  display: block; /* This puts it on a new line */
-  margin-top: 0.5em; /* Adds some space above */
+  font-size: 0.5em;
+  display: block;
+  margin-top: 0.5em;
 }
 
-/* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .custom-font {
-    font-size: 2rem; /* Smaller font size on mobile */
+    font-size: 2rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .custom-font {
-    font-size: 1.5rem; /* Even smaller on very small screens */
+    font-size: 1.5rem;
   }
 }
 
@@ -70,9 +110,9 @@ main {
 
 .main-content-wrapper {
   position: relative;
-  top: 100px; /* Increased from 80px to create more space */
+  top: 100px;
   left: 20px;
-  padding-top: 20px; /* Added padding to push content down further */
+  padding-top: 20px;
 }
 
 main.sidebar-active {
@@ -81,7 +121,7 @@ main.sidebar-active {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font);
   color: var(--text-color);
 }
 
@@ -94,8 +134,8 @@ body {
 
 .logo-container .logo {
   position: fixed;
-  top: 20px; /* Adjust as needed */
-  right: 10px; /* Adjust as needed */
+  top: 20px;
+  right: 10px;
   z-index: 1000;
 }
 
@@ -106,13 +146,13 @@ body {
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px; /* Start off-screen */
+  left: -250px;
   width: 250px;
   height: 100%;
   background: var(--background);
   transition: left 0.3s ease-in-out;
   z-index: 1000;
-  padding: 60px 20px 20px; /* Increased top padding for button */
+  padding: 60px 20px 20px;
   box-sizing: border-box;
   overflow-y: auto;
   height: calc(100% - 80px);
@@ -125,12 +165,14 @@ body {
 .sidebar nav {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* This adds space between menu items */
+  gap: 20px;
 }
 
 .sidebar a {
   color: var(--foreground);
   text-decoration: none;
+  font-family: var(--font);
+  font-weight: 400;
   font-size: 1.2em;
   line-height: 1.5;
   white-space: nowrap;
@@ -141,7 +183,7 @@ body {
 }
 
 .sidebar a[href="/vision-and-mission"] {
-  font-size: 1em; /* Slightly smaller font for this specific item */
+  font-size: 1em;
 }
 
 .sidebar-toggle {
@@ -152,19 +194,19 @@ body {
   background: none;
   border: none;
   color: var(--foreground);
+  font-family: var(--font);
   font-size: 1.5em;
   cursor: pointer;
 }
 
 .sidebar {
-  /* ... existing styles ... */
   overflow-y: auto;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .sidebar::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none;
 }
 
 .top-spacer {
@@ -199,7 +241,6 @@ header nav a {
   margin-left: 1rem;
 }
 
-/* Responsive styles */
 @media only screen and (max-width: 1024px) {
   header {
     padding: 1rem;
@@ -207,7 +248,9 @@ header nav a {
 }
 
 h1 {
-  font-size: 2em;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: var(--h1);
   margin: 0 0 0.67em;
 }
 hr {
@@ -226,7 +269,7 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 700;
 }
 code,
 kbd,
@@ -448,8 +491,7 @@ h5,
 h6,
 .h6 {
   font-family: var(--font-heading);
-  font-size: var(--h1);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 0.85em;
   text-transform: uppercase;
 }
@@ -668,8 +710,9 @@ footer a {
   }
 }
 .section .heading h2 {
-  text-transform: uppercase;
+  font-size: 5rem;
   margin: 0;
+  padding: 0;
 }
 .section .heading::before {
   content: "";
