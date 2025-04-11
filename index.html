@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>oCAD</title>
+	<meta name="description"
+		content="oCAD: Pioneering text-to-3D generative AI solutions for rapid prototyping and 3D asset creation. Transform your ideas into 3D models instantly.">
+	<link rel="shortcut icon" type="image/svg" href="assets/img/favicon.svg" />
+	<link href="assets/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="top-spacer"></div>
+	<div class="logo-container">
+		<a href="/" class="logo">
+<svg width="220.807" height="67.601" viewBox="0 0 220.807 67.601" xmlns="http://www.w3.org/2000/svg"><g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm" fill="#000" style="stroke:#000;stroke-width:0.25mm;fill:#000"><path d="M 100.402 59.601 L 94.702 50.801 A 24.18 24.18 0 0 1 88.814 54.628 A 13.019 13.019 0 0 1 83.602 55.801 A 16.022 16.022 0 0 1 78.089 54.922 C 72.56 52.905 70.104 47.518 70.005 39.883 A 37.449 37.449 0 0 1 70.002 39.401 C 70.002 24.901 78.802 11.901 89.902 11.901 A 8.759 8.759 0 0 1 96.554 14.91 A 17.534 17.534 0 0 1 98.602 17.601 L 108.002 10.401 C 104.302 3.901 98.202 0.001 90.602 0.001 A 34.157 34.157 0 0 0 59.636 21.847 A 46.27 46.27 0 0 0 55.902 40.301 A 35.552 35.552 0 0 0 57.654 51.78 C 61.09 61.863 69.377 67.601 80.702 67.601 A 27.081 27.081 0 0 0 88.538 66.438 C 93.353 64.987 97.221 62.412 99.879 60.072 A 29.75 29.75 0 0 0 100.402 59.601 Z M 100.802 66.401 L 115.902 66.401 L 123.602 50.001 L 143.002 50.001 L 143.802 66.401 L 158.102 66.401 L 151.602 1.201 L 135.202 1.201 L 100.802 66.401 Z M 164.602 66.401 L 185.002 66.401 A 36.315 36.315 0 0 0 205.78 60.468 C 214.97 54.184 220.654 43.007 220.799 27.417 A 65.918 65.918 0 0 0 220.802 26.801 C 220.802 13.51 214.473 5.474 203.199 2.507 A 44.123 44.123 0 0 0 192.002 1.201 L 177.702 1.201 L 164.602 66.401 Z M 19.202 67.601 C 32.902 67.601 47.002 55.201 47.002 36.001 A 23.908 23.908 0 0 0 45.166 26.481 C 42.233 19.695 35.978 15.601 27.802 15.601 C 14.102 15.601 0.002 28.001 0.002 47.201 A 24.075 24.075 0 0 0 1.82 56.72 C 4.73 63.507 10.955 67.601 19.202 67.601 Z M 180.602 55.401 L 189.102 12.201 L 191.702 12.201 A 18.915 18.915 0 0 1 198.736 13.408 C 203.766 15.421 206.802 20.017 206.802 27.701 A 44.082 44.082 0 0 1 205.754 37.667 C 204.919 41.259 203.611 44.281 201.921 46.755 A 19.947 19.947 0 0 1 184.702 55.401 L 180.602 55.401 Z M 17.138 55.61 A 6.305 6.305 0 0 0 20.702 56.601 C 25.531 56.601 29.892 52.082 31.952 45.215 A 31.136 31.136 0 0 0 33.202 36.301 A 20.054 20.054 0 0 0 33.096 34.184 C 32.767 31.087 31.677 28.834 29.864 27.622 A 6.451 6.451 0 0 0 26.202 26.601 A 7.853 7.853 0 0 0 23.18 27.218 C 17.928 29.396 13.802 37.117 13.802 46.901 A 20.433 20.433 0 0 0 13.898 48.92 C 14.21 52.063 15.291 54.382 17.138 55.61 Z M 140.902 11.701 L 141.302 11.701 C 141.448 16.719 141.646 21.314 141.859 25.909 A 9176.825 9176.825 0 0 0 142.102 31.101 L 142.502 39.701 L 128.502 39.701 L 132.502 31.101 A 225.872 225.872 0 0 0 135.784 23.872 C 136.594 22.009 137.382 20.146 138.169 18.264 A 30313.698 30313.698 0 0 0 140.902 11.701 Z" vector-effect="non-scaling-stroke"/></g></svg>
+		</a>
+	  </div>
+	<header class="header">
+		<nav>
+			<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+			<div class="sidebar" id="sidebar">
+			<a href="/manifesto" data-typewriter>
+				m_Manifesto
+			</a>
+			<a href="/about" data-typewriter>
+				a_About
+			</a>
+			<a href="/vision-and-mission" data-typewriter>
+				v_Vision &amp; Mission
+			</a>
+			<a href="/product" data-typewriter>
+				p_Product
+			</a>
+			<a href="/team" data-typewriter>
+				t_Team
+			</a>
+			<a href="/career" data-typewriter>
+				c_Career
+			</a>
+			<a href="/contact" data-typewriter>
+				k_Contact
+			</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="logo-space"></div>
+		<div class="main-content-wrapper">
+
+		<section class="section section--intro" data-section="/intro">
+			<div class="city" data-city=""><canvas style="display: block; width: 400px; height: 760px;" data-engine="three.js r154" width="670" height="760"></canvas></div>
+					<div id="container"></div>
+			<!-- <h1 data-text="Any sufficiently advanced technology is<br> indistinguishable from<br>magic." class = custom-font>
+				"Any sufficiently advanced technology is indistinguishable from magic." 
+				<span class="smaller-font" data-grid-glitch=""> - ARTHUR C. CLARKE</span> -->
+			<!-- </h1> -->
+			</section>
+		<section class="section section--manifesto" data-section="/manifesto">
+			<div class="heading" data-heading>
+				<span class="index">m_</span>
+				<h2>Manifesto</h2>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<p>Part 1<br />
+						3D Creation Reimagined</p>
+					<p>"The future of 3D design lies in the power of words. Speak your vision, and AI brings it to life."</p>
+					<br />
+					<p>At oCAD, we're revolutionizing 3D asset creation through the power of generative AI. Our text2CAD technology transforms natural language descriptions into precise 3D models, making professional-grade 3D design accessible to everyone.</p>
+					<p>The ability to generate 3D assets should be as simple as describing them.<br />
+						Through AI, we're making this a reality.</p>
+					<p>Part 2<br />
+						Accelerating Business Innovation</p>
+					<p>In today's fast-paced market, rapid prototyping is essential. Our AI-powered platform reduces weeks of 3D modeling work into minutes, enabling businesses to iterate and innovate faster than ever.</p>
+					<p>By bridging the gap between imagination and creation, we're empowering businesses to bring their ideas to life with unprecedented speed and efficiency.</p>
+					<p>Part 3<br />
+						The Future of Design</p>
+					<p>oCAD leads the revolution in AI-driven 3D design—making professional 3D asset creation as accessible as writing an email.</p>
+					<p>Our mission is simple: "Transform words into worlds." oCAD's text2CAD technology enables anyone to become a 3D creator, regardless of their technical expertise.</p>
+					<p>"From concept to creation in seconds."<br />
+						Our AI understands context, design principles, and engineering constraints, ensuring that generated 3D models are not just visually appealing but also practical and manufacturable.</p>
+					<p>We're building the future where 3D design is intuitive, instant, and accessible to all.</p>
+					<p>Revolutionizing 3D asset creation through AI—this is oCAD's Mission and Vision.</p>
+				</div>
+			</div>
+		</section>
+		<section class="section section--about" data-section="/about">
+			<div class="heading" data-heading>
+				<span class="index">t_</span>
+				<h2>Who we are</h2>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<p>oCAD specializes in text-to-3D generative AI technology, transforming natural language descriptions into precise 3D models for rapid prototyping and asset creation.</p>
+				</div>
+			</div>
+		</section>
+		<section class="section section--vision-and-mission" data-section="/vision-and-mission">
+			<div class="heading" data-heading>
+				<span class="index">v_</span>
+				<h2>Vision &amp; Mission</h2>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<p>oCAD's Vision:<br />
+						To democratize 3D design through AI, making professional-grade 3D asset creation accessible to everyone.</p>
+
+					<p>oCAD's Mission:<br />
+						Empowering businesses to transform ideas into 3D reality instantly through AI.</p>
+
+					<p>Our text2CAD technology represents a paradigm shift in how businesses approach 3D design and prototyping. By leveraging advanced AI models, we've created a system that understands design intent, engineering constraints, and manufacturing requirements.</p>
+
+					<p>The market opportunity is clear: businesses across industries need faster ways to create and iterate on 3D assets. Traditional 3D modeling is time-consuming and requires specialized skills. Our AI solution breaks these barriers, enabling rapid prototyping and design iteration.</p>
+
+					<p>Our technology excels in two key areas:</p>
+				</div>
+
+				<div class="column">
+					<ol>
+						<li>
+							<p>1. Revolutionary 3D Asset Generation<br />
+								Our text2CAD AI transforms written descriptions into detailed 3D models, complete with proper dimensions, materials, and manufacturing considerations. This dramatically accelerates the prototyping process and reduces design iteration cycles.<br />
+								The system learns from each interaction, continuously improving its understanding of design requirements and industry standards.</p>
+						</li>
+
+						<li>
+							<p>2. Intelligent Design Optimization<br />
+								Beyond basic generation, our AI optimizes designs for manufacturability, structural integrity, and cost-effectiveness. It suggests improvements and alternatives based on industry best practices.<br />
+								This ensures that generated models aren't just visually accurate but also practical for real-world applications.</p>
+						</li>
+					</ol>
+
+					<p>We believe these aspects will fundamentally alter industries through AI, and such changes are
+						essential for technology to evolve into a new generation of platforms—"from task-specific AI to
+						general AI." AI will lead us into a world of limitless possibilities, and this transformation is
+						already underway...</p>
+				</div>
+		</section>
+		<section class="section section--product" data-section="/product">
+			<div class="heading" data-heading>
+				<span class="index">p_</span>
+				<h2>Our AI Solutions</h2>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<p>The oCAD team combines expertise in AI, computer vision, 3D modeling, and manufacturing technology.</p>
+					<p>This unique blend enables us to deliver AI solutions that understand not just how to create 3D models, but how to make them practical and manufacturable.</p>
+				</div>
+				<div class="column">
+					<p>oCAD is backed by leading investors in AI and manufacturing technology, positioning us at the forefront of the generative AI revolution in 3D design.</p>
+					<p>A career at oCAD means working at the intersection of AI and 3D design, helping shape the future of how products are conceived and created.</p>
+					<p>At oCAD, we're passionate about making 3D design accessible to everyone through the power of AI.</p>
+				</div>
+				<div class="column">
+					<p>FEATURES:</p>
+					<ul>
+						<li>Instant 3D model generation from text descriptions</li>
+						<li>Intelligent design optimization for manufacturability</li>
+						<li>Customizable output formats for various 3D printing and manufacturing processes</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="section section--team" data-section="/team">
+			<div class="heading" data-heading>
+				<span class="index">t_</span>
+				<h2>Our Team</h2>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<p>The oCAD founding team brings together over decades of combined experience across AI,
+						data science, and other key industries.</p>
+					<p>This unique combination of business acumen and technical prowess enables us to deliver AI
+						solutions that are not only technologically advanced but also deeply aligned with real-world
+						business needs.</p>
+				</div>
+			</div>
+		</section>
+		<section class="section section--career" data-section="/career">
+			<div class="heading" data-heading>
+				<span class="index">c`_</span>
+				<h2>Career</h2>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<p>oCAD has garnered significant interest and support from prominent figures in the Indian
+						corporate landscape, positioning us for future growth and innovation in the AI sector.</p>
+					<p>A career at oCAD is about passion and commitment to pushing the boundaries of AI technology.
+						You will be working on some of the most challenging yet rewarding projects alongside talented
+						professionals who are shaping the future of AI.</p>
+					<p>At oCAD, we thrive on innovation and excellence, creating AI solutions that we're proud to
+						call transformative.</p>
+					<p>While we don't have formal openings at the moment, we're always interested in connecting with
+						talented individuals, especially students and recent graduates passionate about AI and data
+						science. If you're interested in internship opportunities or future roles, we'd love to hear
+						from you.</p>
+					<p><a href="#contact"
+							onclick="event.preventDefault(); /* Add your contact form logic here */">Connect with Us</a>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="section section--contact" data-section="/contact">
+			<div class="heading" data-heading>
+				<span class="index">k_</span>
+				<h2>Get in touch!</h2>
+			</div>
+			<div class="columns">
+				<div class="column">
+					<p>info@ocad.pro<br />
+				</div>
+				<div class="column"></div>
+			</div>
+			<div class="columns copyright">
+				<div class="column">
+					<p>
+						Email:
+						<br />
+						<a href="mailto:info@ocad.pro" target="_blank">info@ocad.pro</a>
+					</p>
+				</div>
+				<div class="column">
+					<p>
+						oCAD Company
+						<br />
+						Copyright
+						2024
+					</p>
+				</div>
+			</div>
+			<div class="credits columns">
+				<div class="column">
+
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="col">
+				<p data-typewriter>Use letters to switch sections</p>
+				<nav>
+					<a href="/manifesto" data-keypress="m" data-typewriter>m</a>
+					<a href="/about" data-keypress="a" data-typewriter>a</a>
+					<a href="/vision-and-mission" data-keypress="v" data-typewriter>v</a>
+					<a href="/product" data-keypress="p" data-typewriter>p</a>
+					<a href="/team" data-keypress="t" data-typewriter>t</a>
+					<a href="/career" data-keypress="c" data-typewriter>c</a>
+					<a href="/contact" data-keypress="k" data-typewriter>k</a>
+				</nav>
+			</div>
+			<div class="col">
+				<p data-typewriter>Use arrows to scroll</p>
+				<p data-typewriter>⮃</p>
+			</div>
+			<div class="col">
+				<p data-typewriter>oCAD Company</p>
+				<p data-typewriter>Copyright
+					2024
+				</p>
+			</div>
+			<div class="col">
+				<p data-typewriter>Email:</p>
+				<p>
+					<a href="mailto:info@ocad.pro" target="_blank" data-typewriter>info@ocad.pro</a>
+				</p>
+			</div>
+		</footer>
+		</div>
+	</main>
+	<div class="grid-glitch" data-grid-glitch></div>
+	<div class="preloader" data-preloader>
+		<svg width="68" height="13" viewbox="0 0 68 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M7.75 13H0.25C0.25 4.66667 0.25 0.5 0.25 0.5H1.5V11.75H7.75V13Z" fill="white" />
+			<path
+				d="M11.5 11.75H16.5V13H11.5V11.75ZM11.5 11.75H10.25C10.25 5.08333 10.25 1.75 10.25 1.75H11.5C11.5 8.41667 11.5 11.75 11.5 11.75ZM16.5 11.75C16.5 5.08333 16.5 1.75 16.5 1.75H17.75C17.75 8.41667 17.75 11.75 17.75 11.75H16.5ZM11.5 1.75V0.5H16.5V1.75H11.5Z"
+				fill="white" />
+			<path
+				d="M20.25 4.25H21.5C21.5 5.91667 21.5 6.75 21.5 6.75H26.5C26.5 5.08333 26.5 4.25 26.5 4.25H27.75V13H26.5C26.5 9.66667 26.5 8 26.5 8H21.5C21.5 11.3333 21.5 13 21.5 13H20.25V4.25ZM21.5 4.25C21.5 2.58333 21.5 1.75 21.5 1.75H22.75C22.75 3.41667 22.75 4.25 22.75 4.25H21.5ZM26.5 4.25H25.25C25.25 2.58333 25.25 1.75 25.25 1.75H26.5C26.5 3.41667 26.5 4.25 26.5 4.25ZM22.75 1.75V0.5H25.25V1.75H22.75Z"
+				fill="white" />
+			<path
+				d="M30.25 0.5H35.25V1.75H36.5V3H37.75C37.75 8 37.75 10.5 37.75 10.5H36.5V11.75H35.25V10.5H36.5C36.5 5.5 36.5 3 36.5 3H35.25V1.75H31.5C31.5 8.41667 31.5 11.75 31.5 11.75H35.25V13H30.25C30.25 4.66667 30.25 0.5 30.25 0.5Z"
+				fill="white" />
+			<path
+				d="M47.75 13H41.5V11.75H44C44 5.08333 44 1.75 44 1.75H41.5V0.5H47.75V1.75H45.25C45.25 8.41667 45.25 11.75 45.25 11.75H47.75V13Z"
+				fill="white" />
+			<path
+				d="M50.25 0.5H51.5V1.75H52.75C52.75 3.41667 52.75 4.25 52.75 4.25H54C54 5.91667 54 6.75 54 6.75H55.25C55.25 8.41667 55.25 9.25 55.25 9.25H56.5V0.5H57.75C57.75 8.83333 57.75 13 57.75 13H56.5V11.75H55.25C55.25 10.0833 55.25 9.25 55.25 9.25H54C54 7.58333 54 6.75 54 6.75H52.75C52.75 5.08333 52.75 4.25 52.75 4.25H51.5V13H50.25C50.25 4.66667 50.25 0.5 50.25 0.5Z"
+				fill="white" />
+			<path
+				d="M61.5 11.75H65.25V13H61.5V11.75ZM61.5 11.75H60.25C60.25 5.08333 60.25 1.75 60.25 1.75H61.5C61.5 8.41667 61.5 11.75 61.5 11.75ZM66.5 11.75H65.25V10.5H66.5C66.5 8.83333 66.5 8 66.5 8H64V6.75H67.75V13H66.5V11.75ZM66.5 1.75H67.75C67.75 3.41667 67.75 4.25 67.75 4.25H66.5C66.5 2.58333 66.5 1.75 66.5 1.75ZM61.5 1.75V0.5H66.5V1.75H61.5Z"
+				fill="white" />
+		</svg>
+	</div>
+		window.SITE_URL = "https://ocad.pro";
+	</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script type="importmap">
+	{
+	  "imports": {
+		"three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+		"three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+	  }
+	}
+  </script>
+<script type="module" src="./assets/js/animation.js"></script>
+<script type="module" src="./assets/js/main.js"></script>
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+	function initTypewriterEffect() {
+    document.querySelectorAll('[data-typewriter]').forEach(el => {
+        const text = el.textContent;
+        el.textContent = '';
+        typeWriter(el, text);
+    });
+}
+
+function typeWriter(element, text, i = 0) {
+    if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(() => typeWriter(element, text, i), 50);
+    }
+}
+
+function initKeypress() {
+    document.addEventListener('keypress', (event) => {
+        const key = event.key.toLowerCase();
+        const link = document.querySelector(`a[data-keypress="${key}"]`);
+        if (link) {
+            event.preventDefault();
+            link.click();
+        }
+    });
+}
+
+// Call these functions after your Three.js initialization
+initTypewriterEffect();
+initKeypress();
+</script>
+</body>
+</html>
