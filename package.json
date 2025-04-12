@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "gsap": "^3.12.5",
-    "react-icons": "^5.5.0",
-    "three": "^0.167.0",
-    "three.js": "^0.77.1"
-  }
-}
