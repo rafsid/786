@@ -2838,3 +2838,48 @@ html.force--consent.show--consent body {
     margin-top: 1.625em;
   }
 }
+
+/* === Top Right Navigation Styles === */
+
+.top-right-nav {
+  display: flex; /* Arrange links horizontally */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Center horizontally */
+  position: fixed; /* Position fixed to viewport instead of absolute */
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1010; /* Higher than logo but lower than sidebar toggle */
+  height: 60px; /* Match top-spacer height */
+}
+
+.top-right-nav a {
+  color: var(--white); /* Use white color from variables */
+  text-decoration: none;
+  margin: 0 15px; /* Space on both sides of links */
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: 600; /* Slightly bolder text */
+  transition: color 0.2s ease-in-out;
+}
+
+.top-right-nav a:hover {
+  color: var(--black); /* Use --black variable (#ffd700) for hover */
+}
+
+/* Ensure header has defined height and padding */
+header {
+  /* Keep existing styles like position: fixed, width: 100%, background, z-index, etc. */
+  display: flex;
+  justify-content: space-between; /* This pushes sidebar toggle left, new nav right */
+  align-items: center;
+  height: 60px; /* Match top-spacer height */
+  padding: 0 20px; /* Horizontal padding */
+  box-sizing: border-box;
+  position: relative; /* Ensure positioned children work properly */
+}
+/* Ensure logo doesn't overlap */
+.logo-container {
+    /* Existing styles */
+    right: 20px; /* Ensure consistent spacing */
+    z-index: 1000; /* Keep existing z-index */
+}
