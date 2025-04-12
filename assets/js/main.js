@@ -41,6 +41,11 @@ export class App {
     this.linkElements.forEach((link) => {
       console.log("Adding click listener to link:", link.getAttribute("href"));
       link.addEventListener("click", (e) => {
+        // Skip preventDefault for top-right-nav links
+        if (link.closest('.top-right-nav')) {
+          return; // Let the default link behavior happen
+        }
+        
         e.preventDefault();
         const href = link.getAttribute("href");
         console.log("Link clicked:", href);
